@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <title>Nrcm</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <img style="height:90px; position:relative;bottom:180px; float:right; " src="https://nrcmerp.com/Images/Beeslogo2.png">
+        <div class="box">
+            <img class="headimg" style="width:800px; height:180px;" src="https://nrcmerp.com/Images/header.jpg">
+            <div class="one">
+                <a href="" style="text-decoration:none;">Student office 365 Login</a><br><br>
+                <a href="" style="text-decoration:none;">OPAC</a>
+            </div>
+            <div class="two">
+                <form method="Post">
+                <input id="input" name="Username" type="text" placeholder="User Name"><br><br>
+                <button id="btn" class="btn">Next</button><br>
+                <p><b style="color:red;padding-left: 100px;">{{ data }}</b></p>
+            </form>
+            </div>
+            <div class="pwd" style="display: none;">
+                <input id="inputt" type="text" placeholder="Password"><br><br>
+                <button class="btnn" >Submit</button>
+               
+            </div>
+            
+        </div>
+        <div class="footer">
+            <h5>Copyright © 2020 BeeS Software Solutions Pvt. Ltd.</h5>
+        </div>
+    </body>
+   
+    <style>
+        .footer h5{
+            background-color: yellow;
+            padding-top: 10px;
+            text-align: center;
+            margin-bottom: 0px;
+            height: 20px;
+            
+        }
+        .footer{
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        #input,#inputt{
+            width:160%;
+            height: 6%;
+        }
+        .btn,.btnn{
+            width:160%;
+            background-color: #007BFF;
+            height: 6%;
+        }
+        .one{
+            padding: 80px 0 0 150px;
+            float:left;
+            text-align: center;
+            text-align: none;
+        }
+        .two,.pwd{
+           padding-top: 80px;
+           padding-right: 200px;
+            float: right;
+            text-align: center;
+        }
+
+        .box{
+            width:900px;
+            height:500px;
+            background-color: white;
+            border-radius: 3%;
+            align-items: center;
+            margin:10% 18% 10% 25%;
+        }
+        body{
+            background-image: url("https://nrcmerp.com/Images/bgimage3.png");
+        }
+        .headimg{
+            margin:4% 0 0 5.5%;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                $(".two").hide();
+                $(".pwd").show();
+            })
+        }
+        )
+    </script>
+</html>
